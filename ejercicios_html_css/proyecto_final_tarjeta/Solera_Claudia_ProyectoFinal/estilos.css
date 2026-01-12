@@ -1,0 +1,202 @@
+/* ============================================
+   RESET Y CONFIGURACIÓN GLOBAL
+   ============================================ */
+
+/* Box-sizing global (OBLIGATORIO) */
+* {
+    box-sizing: border-box;
+}
+
+/* Variables CSS para colores coherentes */
+:root {
+    --color-primario: #2563eb;
+    --color-secundario: #7c3aed;
+    --color-fondo: #f8fafc;
+    --color-texto: #1e293b;
+    --color-exito: #10b981;
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+header {
+    background-color: var(--color-fondo);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--color-primario);
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--color-secundario);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-texto);  
+}
+
+nav {
+    background-color: var(--color-secundario);
+    padding: 0.5rem;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: var(--color-fondo);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: disc inside;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--color-fondo);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 3px rgba(33, 99, 235, 0.1);
+}
+
+input:valid, textarea:valid {
+    border-color: var(--color-exito);
+    background-color: var(--color-fondo);
+}
+
+input:invalid, textarea:invalid {
+    border-color: var(--color-error);
+    background-color: var(--color-fondo);
+}
+
+input:required, textarea:required {
+    border-left: 4px solid var(--color-required);
+}
+
+input:optional, textarea:optional {
+    border-left: 4px solid var(--color-optional);
+}
+
+button {
+    background-color: var(--color-primario);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--color-secundario);
+}
+
+footer {
+    background-color: var(--color-primario);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer ul.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+footer ul.social-links li a {
+    text-decoration: none;
+}
+
+footer ul.social-links li a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: var(--color-fondo);
+    text-align: center;
+    padding: 1rem;
+}
+
+.success {
+    color: var(--color-exito);
+}
+
+

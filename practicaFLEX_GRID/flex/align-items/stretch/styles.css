@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.contenedor {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    height: 200px;
+}
+
+.item {
+    width: 80px;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.rojo { background: #e74c3c; }
+.azul { background: #3498db; }
+.verde { background: #2ecc71; }
+.naranja { background: #e67e22; }

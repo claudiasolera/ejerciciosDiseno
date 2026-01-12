@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Web con Flex y Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <!-- Header con Flexbox -->
+        <header>
+            <div class="logo">Mi Sitio Web</div>
+            <nav class="nav">
+                <a href="#">Inicio</a>
+                <a href="#">Artículos</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </header>
+
+        <!-- Contenido Principal con Grid -->
+        <main>
+            <section class="articles">
+                <article class="article">
+                    <h2>Uso de Flexbox</h2>
+                    <p>En este diseño, Flexbox se utiliza en tres áreas principales:</p>
+                    <ul>
+                        <li>Header: Para alinear el logo y la navegación horizontalmente</li>
+                        <li>Sidebar: Para organizar secciones y enlaces verticalmente</li>
+                        <li>Footer: Para distribuir el copyright y los enlaces</li>
+                    </ul>
+                </article>
+                <article class="article">
+                    <h2>Uso de Grid</h2>
+                    <p>Grid se implementa en dos niveles:</p>
+                    <ul>
+                        <li>Diseño principal: Divide el contenido en dos columnas (artículos y sidebar) usando proporción 3:1</li>
+                        <li>Sección de artículos: Crea una cuadrícula responsiva que se adapta automáticamente</li>
+                    </ul>
+                </article>
+                <article class="article">
+                    <h2>Características Destacadas</h2>
+                    <p>Beneficios del diseño:</p>
+                    <ul>
+                        <li>Diseño responsive sin media queries</li>
+                        <li>Uso combinado de Flexbox y Grid</li>
+                        <li>Adaptabilidad automática del contenido</li>
+                        <li>Distribución flexible de elementos</li>
+                        <li>Estructura modular y limpia</li>
+                    </ul>
+                </article>
+                <article class="article">
+                    <h2>Técnicas de Layout</h2>
+                    <p>Técnicas CSS avanzadas:</p>
+                    <ul>
+                        <li>Grid con `repeat(auto-fit, minmax())`</li>
+                        <li>Flexbox con `gap` para espaciado</li>
+                        <li>Uso de propiedades como `justify-content` y `align-items`</li>
+                        <li>Diseño responsivo basado en propiedades flexibles</li>
+                    </ul>
+                </article>
+            </section>
+
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3>Categorías</h3>
+                    <div class="sidebar-links">
+                        <a href="#">Tecnología</a>
+                        <a href="#">Diseño</a>
+                        <a href="#">Desarrollo</a>
+                    </div>
+                </div>
+                <div class="sidebar-section">
+                    <h3>Últimos Posts</h3>
+                    <div class="sidebar-links">
+                        <a href="#">Post 1</a>
+                        <a href="#">Post 2</a>
+                        <a href="#">Post 3</a>
+                    </div>
+                </div>
+                <div class="sidebar-section">
+                    <h3>Redes Sociales</h3>
+                    <div class="sidebar-links">
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        <!-- Footer con Flexbox -->
+        <footer>
+            <div class="copyright">© 2024 Mi Sitio Web</div>
+            <div class="footer-links">
+                <a href="#">Privacidad</a>
+                <a href="#">Términos</a>
+                <a href="#">Contacto</a>
+            </div>
+        </footer>
+</body>
+</html>
