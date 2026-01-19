@@ -1,0 +1,1171 @@
+/* ==========================================
+   RESET Y CONFIGURACIÓN BASE
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1512px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Backgrounds según página */
+.page-index {
+    background: #E4E2E8;
+}
+
+.page-tienda {
+    background: #E1D1F5;
+}
+
+/* ==========================================
+   HEADER - 109px alto
+   ========================================== */
+.header {
+    width: 100%;
+    height: 109px;
+    background: linear-gradient(90deg, #41196F 0%, #6F58AF 85.58%);
+    position: relative;
+}
+
+.header-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 70px;
+    color: #FFFFFF;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-title i {
+    font-size: 55px;
+    color: #FFFFFF;
+}
+
+.header-title span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+/* ==========================================
+   NAV - 69px alto
+   ========================================== */
+.navbar {
+    width: 100%;
+    height: 69px;
+    background: #2A2631;
+}
+
+.nav-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Buscador - 760px × 46.71px */
+.search-bar {
+    display: flex;
+    width: 760px;
+    height: 46.71px;
+}
+
+.search-bar input {
+    flex: 1;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    padding: 0 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #8C8C8C;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar button {
+    width: 67.2px;
+    height: 46.71px;
+    background: #57E4D3;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar button i {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+/* Menú */
+.nav-menu-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.menu-btn {
+    width: 38px;
+    height: 38px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.menu-btn:hover {
+    transform: scale(1.1);
+}
+
+.menu-btn i {
+    font-size: 38px;
+    color: #FFFFFF;
+}
+
+.menu-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+/* Menú desplegable */
+.dropdown-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2A2631;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background: #E1D1F5;
+}
+
+.dropdown-menu a.active {
+    background: #41196F;
+    color: #FFFFFF;
+}
+
+/* ==========================================
+   PÁGINA PRINCIPAL - SECCIÓN 1: HERO
+   ========================================== */
+.hero-section {
+    width: 100%;
+    height: 403px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.hero-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #200D38;
+}
+
+/* Círculos blur */
+.blur-circle {
+    position: absolute;
+    width: 291.94px;
+    height: 258px;
+    border-radius: 50%;
+    filter: blur(100px);
+}
+
+.blur-1 {
+    background: #81EBDE;
+    right: 150px;
+    top: 50px;
+}
+
+.blur-2 {
+    background: #B58CE5;
+    left: 45%;
+    top: 130px;
+}
+
+.blur-3 {
+    background: #B58CE5;
+    left: -100px;
+    top: 80px;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 20px;
+    gap: 70px;
+}
+
+.hero-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 110%;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.hero-text p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.hero-image img {
+    width: 533.71px;
+    height: 314.72px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+/* ==========================================
+   PÁGINA PRINCIPAL - SECCIÓN 2: LIBROS
+   ========================================== */
+.featured-section {
+    padding: 80px 0;
+    width: 100%;
+}
+
+
+
+.featured-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.featured-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #383838;
+    max-width: 1127px;
+    margin: 0 auto 60px;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 193px;
+}
+
+.book-item img {
+    width: 107px;
+    height: 166px;
+    object-fit: cover;
+    filter: drop-shadow(0px 4px 34.3px rgba(0, 0, 0, 0.43));
+    margin-bottom: 18px;
+}
+
+.book-item h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    color: #2A2631;
+    margin-bottom: 8px;
+}
+
+.book-desc {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    color: #7E7292;
+    margin-bottom: 8px;
+}
+
+.book-price {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #383838;
+}
+
+/* ==========================================
+   PÁGINA PRINCIPAL - SECCIÓN 3: TIENDAS
+   ========================================== */
+.store-section {
+    padding: 60px 0 80px;
+    background: linear-gradient(98.09deg, #C4A3EA 2.25%, #6F5C84 55.15%);
+    width: 100%;
+}
+
+.store-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 130%;
+    color: #F8F8F9;
+    margin-bottom: 40px;
+    padding-left: 100px; /* ajusta este valor para moverlo a la derecha */
+}
+
+
+.store-finder {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr; /* buscador un poco más ancho que antes */
+    gap: 20px;
+    max-width: 1300px; /* contenedor más ancho */
+    margin: 0 auto; /* centrar */
+    padding: 20px;
+    border-radius: 16px;
+    background: #F2F0F4;
+    box-shadow: 0px 4px 13px rgba(0,0,0,0.23);
+}
+
+/* Sidebar tiendas */
+.store-sidebar {
+    border-radius: 16px; /* bordes más redondeados */
+    padding: 20px;
+    background: #fff;
+    max-width: 450px; /* un poco más ancho */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-filter-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.city-dropdown {
+    width: 100%;
+    padding: 12px 15px;
+    border: 0.5px solid #ABA2B7;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2A2631;
+    background: white;
+    cursor: pointer;
+}
+
+.store-search-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 0.5px solid #ABA2B7;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    background: white;
+}
+
+.results-section h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    background: #544B61;
+    border-radius: 4px;
+}
+
+.store-item {
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.store-item h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2A2631;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.store-item h4 i {
+    color: #823DD3;
+}
+
+.store-item p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    color: #8C8C8C;
+    margin: 6px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.store-item p i {
+    color: #544B61;
+    font-size: 14px;
+}
+
+.store-map {
+    border-radius: 16px;
+    overflow: hidden;
+    height: 480px; /* altura fija */
+}
+
+.store-map {
+    border-radius: 16px; /* bordes redondeados */
+    overflow: hidden; /* que la imagen no se salga de los bordes */
+    height: 600px; /* altura fija o puedes poner height: 100% si quieres que llene */
+}
+
+/* ==========================================
+   PÁGINA TIENDA - LAYOUT
+   ========================================== */
+.tienda-main {
+    display: flex; /* hacemos un contenedor flexible */
+    gap: 25px;
+}
+
+.tienda-layout {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 25px;
+    align-items: stretch; /* hace que el sidebar y productos tengan la misma altura */
+}
+
+/* FILTROS - Sidebar izquierdo 320px */
+.filtros-sidebar {
+    width: 320px;
+    background: #D2BAF0;
+    padding: 14px 25px 40px;
+    height: 100%; /* altura total de la ventana menos header (109px) y navbar (69px) */
+    border-radius: 0; /* sin bordes redondeados */
+}
+
+.filtros-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.filtros-header i {
+    font-size: 28px;
+    color: #2A2631;
+}
+
+.filtros-header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #383838;
+}
+
+.btn-todos-productos {
+    width: 100%;
+    padding: 12px 20px;
+    background: #1E40AF;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 14px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-filtro {
+    width: 100%;
+    padding: 12px 20px;
+    background: #2563EB;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.btn-filtro:hover,
+.btn-todos-productos:hover {
+    opacity: 0.9;
+}
+
+/* PRODUCTOS - Grid derecho */
+.productos-area {
+    width: 100%;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 267px);
+    gap: 25px;
+}
+
+/* Tarjeta producto - 267px × 459px */
+.producto-card {
+    width: 267px;
+    height: 459px;
+    background: #F2F0F4;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4.6px rgba(0, 0, 0, 0.33);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Badge oferta */
+.badge-oferta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 87px;
+    height: 30px;
+    background: #2DDEC8;
+    border-radius: 12px 0 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.producto-card img {
+    width: 229px;
+    height: 265px;
+    object-fit: cover;
+    margin: 30px auto 0;
+}
+
+.producto-info {
+    padding: 0 23px 11px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 110%;
+    color: #383838;
+    margin-bottom: 5px;
+}
+
+.producto-categoria {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.producto-descripcion {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ABA2B7;
+    margin-bottom: auto;
+}
+
+.precio-tachado {
+    text-decoration: line-through;
+    color: #7E7292;
+    font-size: 14px;
+}
+
+.btn-añadir-carrito {
+    width: 148px;
+    padding: 12px 20px;
+    background: #2563EB;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.btn-añadir-carrito:hover {
+    background: #1e40af;
+}
+
+/* ==========================================
+   FOOTER - 190px total
+   ========================================== */
+.footer {
+    width: 100%;
+}
+
+.footer-top {
+    height: 174px;
+    background: linear-gradient(90deg, #41196F 0%, #6F58AF 85.58%);
+    display: flex;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 40px;
+}
+
+.social-icons a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-icons i {
+    font-size: 36px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000; /* negro para los links */
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    height: 52px;
+    background: #2A2631;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bottom p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+/* ------------------------------
+   AJUSTE PARA TABLET (601px - 1024px)
+   ------------------------------ */
+@media screen and (max-width: 1024px) {
+
+    /* HEADER */
+    .header-content {
+        justify-content: space-between; /* logo a la izquierda, título a la derecha */
+        padding: 0 30px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo i {
+        font-size: 50px;
+    }
+
+    .header-title span {
+        font-size: 28px;
+    }
+
+    .header-title i {
+        font-size: 40px;
+    }
+
+    /* NAV */
+    .nav-content {
+        flex-direction: column; /* buscador debajo del menú */
+        align-items: flex-start;
+        padding: 10px 30px;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .nav-menu-wrapper {
+        justify-content: flex-start;
+        position: relative; /* necesario para que dropdown se posicione bien */
+        width: 100%;
+        z-index: 2000; 
+    }
+
+    .menu-btn {
+        display: flex !important; /* asegurar que se vea */
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-btn i {
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+
+    .menu-text {
+        display: none;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 50px; /* debajo del navbar */
+        right: 0;
+        background: #fff;
+        border-radius: 8px;
+        padding: 10px 0;
+        width: 250px;
+        max-width: 300px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        z-index: 3000;
+    }
+
+    .dropdown-menu.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    /* HERO */
+    .hero-container {
+        grid-template-columns: 1fr; /* apilado en tablet */
+        gap: 30px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    /* SECCIÓN LIBROS */
+    .books-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 40px;
+    }
+
+    .book-item {
+        width: auto;
+    }
+
+    /* SECCIÓN TIENDAS */
+    .store-section h2 {
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .store-finder {
+        grid-template-columns: 1fr 1fr; /* dos columnas */
+        gap: 15px;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .store-map {
+        height: 400px;
+    }
+
+    /* FOOTER */
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        height: auto;
+        gap: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+
+    .social-icons i {
+        font-size: 28px;
+    }
+
+    .footer-links {
+        justify-content: center;
+        max-width: 400px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE MÓVIL (Hasta 600px)
+   ========================================== */
+@media screen and (max-width: 600px) {
+
+    /* ================= HEADER ================= */
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        display: none; /* ocultar logo en móvil */
+    }
+
+    .header-title span {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .header-title i {
+        font-size: 35px;
+    }
+
+    /* ================= NAVBAR ================= */
+    .nav-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .nav-menu-wrapper {
+        position: relative; /* dropdown absoluto relativo a esto */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        z-index: 1001; /* encima del buscador */
+        gap: 10px;
+    }
+
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-btn i {
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+
+    .menu-text {
+        display: none; /* ocultar texto en móvil */
+    }
+
+    /* ================= DROPDOWN ================= */
+    .dropdown-menu {
+        position: relative; /* empuja contenido, no lo tapa */
+        top: 0;
+        width: 100%;
+        margin-top: 10px;
+        background: #fff;
+        border-radius: 8px;
+        padding: 10px 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+        z-index: 1000;
+    }
+
+    .dropdown-menu.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .dropdown-menu li {
+        margin: 0;
+    }
+
+    .dropdown-menu a {
+        display: block;
+        padding: 12px 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        color: #2A2631;
+        text-decoration: none;
+        transition: background 0.3s;
+    }
+
+    .dropdown-menu a:hover {
+        background: #E1D1F5;
+    }
+
+    /* ================= HERO ================= */
+    .hero-container {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    /* ================= LIBROS ================= */
+    .books-grid {
+        grid-template-columns: 1fr; /* un libro por fila */
+        gap: 30px;
+    }
+
+    /* ================= TIENDAS ================= */
+    .store-finder {
+        grid-template-columns: 1fr; /* columna única */
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .store-map {
+        height: 300px;
+    }
+
+    .store-section h2 {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    /* ================= PÁGINA TIENDA ================= */
+    .tienda-layout {
+        grid-template-columns: 1fr; /* sidebar arriba, productos abajo */
+        gap: 15px;
+    }
+
+    .filtros-sidebar {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .productos-grid {
+        grid-template-columns: 1fr; /* un producto por fila */
+        justify-items: center;
+    }
+
+    .producto-card {
+        width: 90%;
+        max-width: 267px;
+    }
+
+    /* ================= FOOTER ================= */
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 10px;
+        gap: 15px;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+
+    .social-icons i {
+        font-size: 24px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+        max-width: 100%;
+        text-align: center;
+    }
+}

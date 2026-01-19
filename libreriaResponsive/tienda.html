@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagiaBooks - Tienda Online</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-tienda">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+            </div>
+            <div class="header-title">
+                <i class="fas fa-magic"></i>
+                <span>MagiaBooks</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <form class="search-bar" action="#" method="get">
+                <input type="search" name="query" placeholder="Buscar en MagiaBooks" aria-label="Buscar">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            
+            <div class="nav-menu-wrapper">
+                <button class="menu-btn" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <span class="menu-text">Menú</span>
+                
+                <!-- Menú desplegable -->
+                <ul class="dropdown-menu" id="dropdownMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tienda.html" class="active">Tienda Online</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="tienda-main">
+        <div class="container">
+            <div class="tienda-layout">
+                <!-- FILTROS (Sidebar izquierdo - 320px) -->
+                <aside class="filtros-sidebar">
+                    <div class="filtros-header">
+                        <i class="fas fa-filter"></i>
+                        <h2>Filtrar por</h2>
+                    </div>
+                    
+                    <button class="btn-todos-productos">
+                        <i class="fas fa-check-circle"></i>
+                        Todos los productos
+                    </button>
+                    
+                    <button class="btn-filtro">Libros</button>
+                    <button class="btn-filtro">Revistas</button>
+                    <button class="btn-filtro">Cómics</button>
+                    <button class="btn-filtro">Otros</button>
+                </aside>
+
+                <!-- PRODUCTOS (Grid derecho) -->
+                <section class="productos-area">
+                    <div class="productos-grid">
+                        <!-- Producto 1 -->
+                        <article class="producto-card">
+                            <img src="public/img/img1.png" alt="Taza de Juego de Tronos">
+                            <div class="producto-info">
+                                <h3>Taza de Juego de Tronos</h3>
+                                <p class="producto-categoria">Merchandising</p>
+                                <p class="producto-descripcion">9 €</p>
+                                <button class="btn-añadir-carrito">Añadir al carrito</button>
+                            </div>
+                        </article>
+
+                        <!-- Producto 2 (Con oferta) -->
+                        <article class="producto-card producto-oferta">
+                            <div class="badge-oferta">Oferta</div>
+                            <img src="public/img/img2.png" alt="Neverwhare">
+                            <div class="producto-info">
+                                <h3>Neverwhare</h3>
+                                <p class="producto-categoria precio-tachado">18,99 €</p>
+                                <p class="producto-descripcion">14,99 €</p>
+                                <button class="btn-añadir-carrito">Añadir al carrito</button>
+                            </div>
+                        </article>
+
+                        <!-- Producto 3 -->
+                        <article class="producto-card">
+                            <img src="public/img/img3.png" alt="El último deseo">
+                            <div class="producto-info">
+                                <h3>El último deseo</h3>
+                                <p class="producto-categoria">Fantasía</p>
+                                <p class="producto-descripcion">16,95 €</p>
+                                <button class="btn-añadir-carrito">Añadir al carrito</button>
+                            </div>
+                        </article>
+
+                        <!-- Producto 4 -->
+                        <article class="producto-card">
+                            <img src="public/img/img4.png" alt="Harry Potter y la piedra filosofal">
+                            <div class="producto-info">
+                                <h3>Harry Potter y la piedra filosofal</h3>
+                                <p class="producto-categoria">Fantasía</p>
+                                <p class="producto-descripcion">15,95 €</p>
+                                <button class="btn-añadir-carrito">Añadir al carrito</button>
+                            </div>
+                        </article>
+
+                        <!-- Producto 5 (Con oferta) -->
+                        <article class="producto-card producto-oferta">
+                            <div class="badge-oferta">Oferta</div>
+                            <img src="public/img/img5.png" alt="Percy Jackson y el ladrón del rayo">
+                            <div class="producto-info">
+                                <h3>Percy Jackson y el ladrón del rayo</h3>
+                                <p class="producto-categoria precio-tachado">14,95 €</p>
+                                <p class="producto-descripcion">12,71 €</p>
+                                <button class="btn-añadir-carrito">Añadir al carrito</button>
+                            </div>
+                        </article>
+
+                        <!-- Producto 6 -->
+                        <article class="producto-card">
+                            <img src="public/img/img6.png" alt="Bolsa de Harry Potter">
+                            <div class="producto-info">
+                                <h3>Bolsa de Harry Potter</h3>
+                                <p class="producto-categoria">Merchandising</p>
+                                <p class="producto-descripcion">12,95 €</p>
+                                <button class="btn-añadir-carrito">Añadir al carrito</button>
+                            </div>
+                        </article>
+
+                        <!-- Producto 7 -->
+                        <article class="producto-card">
+                            <img src="public/img/img7.png" alt="Ready Player One">
+                            <div class="producto-info">
+                                <h3>Ready Player One</h3>
+                                <p class="producto-categoria">Ciencia Ficción</p>
+                                <p class="producto-descripcion">14,95 €</p>
+                                <button class="btn-añadir-carrito">Añadir al carrito</button>
+                            </div>
+                        </article>
+
+                        <!-- Producto 8 (Con oferta) -->
+                        <article class="producto-card producto-oferta">
+                            <div class="badge-oferta">Oferta</div>
+                            <img src="public/img/img8.png" alt="Taza de Harry Potter">
+                            <div class="producto-info">
+                                <h3>Taza de Harry Potter</h3>
+                                <p class="producto-categoria precio-tachado">11,99 €</p>
+                                <p class="producto-descripcion">9,00 €</p>
+                                <button class="btn-añadir-carrito">Añadir al carrito</button>
+                            </div>
+                        </article>
+
+                        <!-- Producto 9 -->
+                        <article class="producto-card">
+                            <img src="public/img/img9.png" alt="El Príncipe Cruel">
+                            <div class="producto-info">
+                                <h3>El Príncipe Cruel</h3>
+                                <p class="producto-categoria">Fantasía</p>
+                                <p class="producto-descripcion">14,95 €</p>
+                                <button class="btn-añadir-carrito">Añadir al carrito</button>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container footer-content">
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Inicio</a> |
+                    <a href="#">Catálogo</a> |
+                    <a href="#">Novedades</a> |
+                    <a href="#">Contacto</a> |
+                    <a href="#">Sobre nosotros</a> |
+                    <a href="#">Política de privacidad</a> |
+                    <a href="#">Política de cookies</a> |
+                    <a href="#">Aviso legal</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright © 2025 Claudia. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript para menú desplegable -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+        
+        menuToggle.addEventListener('click', function() {
+            dropdownMenu.classList.toggle('show');
+        });
+        
+        // Cerrar menú al hacer clic fuera
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.nav-menu-wrapper')) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
