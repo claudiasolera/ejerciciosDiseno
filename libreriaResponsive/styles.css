@@ -849,12 +849,16 @@ h1, h2, h3, h4 {
     }
 
     .menu-btn {
-        display: flex !important; /* asegurar que se vea */
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
         align-items: center;
         justify-content: center;
-        cursor: pointer;
         width: 40px;
         height: 40px;
+        cursor: pointer;
+        z-index: 1000; 
     }
 
     .menu-btn i {
